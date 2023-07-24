@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d855f114ac.js" crossorigin="anonymous"></script>
     <script>
@@ -34,20 +36,37 @@
         }
     </style>
 </head>
-<header class="container mx-auto">
-    <div class="navbar bg-base-100 py-8">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 poppins">
+<body class="poppins">
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 py-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 poppins">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class=" w-30">
+                    <img src="../images/logo2.png" alt="">
+                </div>
+
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 poppins">
                     <li><a>Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Cases</a></li>
@@ -55,45 +74,170 @@
                     <li><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class=" w-30">
-                <img src="./images/logo2.png" alt="">
-            </div>
-
-
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 poppins">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Cases</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <a class="btn bg-[#B68C5A] text-white poppins">Free Consultation</a>
-        </div>
-    </div>
-    <!-- start-header  -->
-    <div class="hero min-h-screen border rounded-lg " style="background-image: url(./images/banner.png);">
-        <div class="hero-overlay bg-opacity-60 bg-black rounded-lg "></div>
-        <div class="hero-content text-center text-neutral-content ">
-            <div class="w-2/3">
-                <h1 class="mb-5   text-7xl font-bold font-eb">We Provide Effective Legal Solutions</h1>
-                <p class="mb-5 poppons lg:py-6">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in some form, by injected humour.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs m-3" />
-                <button class="btn btn-primary ">Get Started</button>
+            <div class="navbar-end">
+                <a class="btn bg-[#B68C5A] text-white poppins">Free Consultation</a>
             </div>
         </div>
-    </div>
-</header>
-<main class="container mx-auto">
+        <!-- start-header  -->
+        <div class="hero min-h-screen border rounded-lg " style="background-image: url(../images/banner.png);">
+            <div class="hero-overlay bg-opacity-60 bg-black rounded-lg "></div>
+            <div class="hero-content text-center text-neutral-content ">
+                <div class="w-2/3">
+                    <h1 class="mb-5   text-7xl font-bold font-eb">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 poppons lg:py-6">There are many variations of passages of Lorem Ipsum available, but
+                        the
+                        majority have suffered alteration in some form, by injected humour.</p>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs m-3" />
+                    <button class="btn btn-primary ">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- law item -->
+        <section class="mt-24 text-center">
+            <h2 class="text-3xl font-extrabold font-eb my-2 ">The Legal Practice Area</h2>
+            <p class="lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but
+                the
+                majority have suffered alteration in some form, by injected humour.</p>
+            <!-- card container  -->
 
-</main>
-<footer></footer>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Personal Injury Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/child.png" alt="Personal Injury Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Personal Injury Law</h2>
+                        <p>If you've been injured due to someone else's negligence, we can help you get the compensation you deserve.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 2: Family Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/education.png" alt="Family Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Family Law</h2>
+                        <p>Going through a divorce or child custody battle? Our experienced family lawyers are here to guide you.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 3: Criminal Defense -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/criminal.png" alt="Criminal Defense" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Criminal Defense</h2>
+                        <p>If you're facing criminal charges, our skilled defense attorneys will fight to protect your rights.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 4: Real Estate Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/business.png" alt="Real Estate Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Real Estate Law</h2>
+                        <p>Buying, selling, or dealing with property disputes? Our real estate lawyers are here to assist you.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 5: Immigration Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/business.png" alt="Immigration Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Immigration Law</h2>
+                        <p>Need help with visas, green cards, or citizenship applications? Our immigration lawyers are here to support you.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 6: Employment Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/education.png" alt="Employment Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Employment Law</h2>
+                        <p>Facing workplace discrimination or need help with employment contracts? Our employment lawyers are here for you.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 7: Intellectual Property Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/divorce.png" alt="Intellectual Property Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Intellectual Property Law</h2>
+                        <p>Protect your creative work and innovations with our experienced intellectual property attorneys.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Card 8: Environmental Law -->
+                <div class="card bg-base-100 hover:bg-gradient-to-b from-[#E7E7E7]">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/time.png" alt="Environmental Law" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Environmental Law</h2>
+                        <p>Passionate about protecting the environment? Our environmental lawyers work to enforce environmental regulations and advocate for sustainability.</p>
+                        <div class="card-actions">
+                            <button class="btn text-[#B68C5A] hover:text-[#694c27] border-transparent hover:border-transparent hover:bg-transparent text-4xl bg-transparent mt-5">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
 
-<body>
+    </main>
+    <footer></footer>
+
+
 
 </body>
 
