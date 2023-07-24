@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log</title>
+    <title>Legal-solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d855f114ac.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-eb {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
 </head>
+<header class="container mx-auto">
+    <div class="navbar bg-base-100 py-8">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 poppins">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class=" w-30">
+                <img src="./images/logo2.png" alt="">
+            </div>
+
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 poppins">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn bg-[#B68C5A] text-white poppins">Free Consultation</a>
+        </div>
+    </div>
+    <!-- start-header  -->
+    <div class="hero min-h-screen border rounded-lg " style="background-image: url(./images/banner.png);">
+        <div class="hero-overlay bg-opacity-60 bg-black rounded-lg "></div>
+        <div class="hero-content text-center text-neutral-content ">
+            <div class="w-2/3">
+                <h1 class="mb-5   text-7xl font-bold font-eb">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5 poppons lg:py-6">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour.</p>
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs m-3" />
+                <button class="btn btn-primary ">Get Started</button>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="container mx-auto">
+
+</main>
+<footer></footer>
 
 <body>
 
